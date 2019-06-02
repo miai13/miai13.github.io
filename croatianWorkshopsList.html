@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Radionice za djecu</title>
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <body>
+        <img src="slike/naslovna_slika.jpg" >
+
+         <!-- Navigacijska traka -->
+         <ul id="navBar"> 
+            <a href="application.html"><li class="navBarPart">Prijavi se na radionicu</li></a>
+            <li class="navBarPart">Popis radionica
+                <ul class="dropdown">
+                    <a href="croatianWorkshopsList.html"><li>Hrvatski jezik</li></a>
+                    <a href="artWorkshopsList.html"><li>Likovna kultura</li></a>
+                </ul>
+            </li>
+            <a href="about.html"><li class="navBarPart" style="width: 100px">O nama</li></a>
+            <a href="contact.html"><li class="navBarPart" style="width: 100px">Kontakt</li></a>
+            <a href="home.html"><li class="navBarPart" style="width: 100px">Home</li></a>
+        </ul>
+
+        <!-- Popis radionica iz hj-->
+        <div class="outerDiv" style="padding: 20px;">
+            <h1>Hrvatski jezik</h1>
+            <a href="croatianActing.html"><div class="picAndText"> <!-- Prva radionica -->
+                <div class="picDiv">
+                    <img src="https://media.defense.gov/2011/Aug/04/2000231895/780/780/0/110804-F-MA715-023.JPG">                
+                </div>
+                <div class="textDiv">Vaše dijete je oduvijek imalo dara za izvedbu raznih recitacija, pjesama, igrokaza, za ples ili pjevanje? Ako ste opotvrdno odgovorili na ovo pitanje vrijeme je da ga/ju prijavite na našu radionicu glume gdje će uz vodstvo stručnjaka dotjerati svoje talente.</div>
+            </div></a>
+            <a href="croatianReading.html"><div class="picAndText"> <!-- Druga radionica -->
+                <div class="picDiv">
+                    <img src="https://cdn.pixabay.com/photo/2018/10/29/23/58/children-reading-3782456_960_720.jpg" style="height: 220px">
+                </div>
+                <div class="textDiv">Ako vaše dijete voli čitati i želite da usavrši tu tehniku prijavite ga/ju na našu radionicu izražajnog čitanja gdje će uz vodstvo stručnjaka dotjerati svoj talent.</div>
+            </div></a>
+            <a href="croatianWriting.html"><div class="picAndText"> <!-- Treća radionica -->  
+                <div class="picDiv">
+                    <img src="https://c.pxhere.com/photos/27/31/kids_girl_pencil_drawing_notebook_study_vdvoem_friends-837883.jpg!d" style="height: 220px; background-color: white">
+                </div>
+                <div class="textDiv">Radionica kreativnog pisanja za djecu namjenjena je onima koji uživaju u pričanju priča, koji svojim šaljivim prepričavanjima uveseljavaju, iznenađuju i zabavljaju svoju okolinu. Ako je i vaše dijete takvo prijavite ga na radionicu na kojoj će raditi na različitim stilovima pisanja primjerenim njegovoj dobi. Na ovu radionicu mogu se prijaviti djeca koja pohađaju drugi, treći i četvrti razred osnovne škole.</div>
+            </div></a>
+        </div>
+            
+        <!-- Footer -->
+        <div class="footer">
+            <img id="instagram" class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Instagram_circle.svg/512px-Instagram_circle.svg.png">
+            <img id="facebook" class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Icon_Facebook.svg/512px-Icon_Facebook.svg.png">
+            <img id="twitter" class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Icon_Twitter.svg/512px-Icon_Twitter.svg.png">
+            <div id="newsletter">
+                <h1 style="font-size: 17px">Želite li primati naše obavijesti?</h1>
+                <p>Prijavite se na naš newsletter, prijavom dobivate kôd kojim ostvarujete pravo na 10% popusta na jednu radionicu.</p>
+                <form>
+                    Ime:<br>
+                    <input type="text" id="apply"><br>
+                    e-mail adresa:<br>
+                    <input type="text" id="e-mail"><br><br>
+                    <button id="news" style="border-radius: 0%" onclick="applyFunc()" type="button">Prijavi se!</button>
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript" src="home.js"></script>
+    </body>
+</html>

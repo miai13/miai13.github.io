@@ -1,0 +1,14 @@
+.outerPicAndText {
+    background-color: darkgray;
+    margin-bottom: 15px; 
+    height: auto; 
+    padding: 20px; 
+    line-height: 200%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.picAndText input, .picAndText select {
+    border: 1px solid black;
+}

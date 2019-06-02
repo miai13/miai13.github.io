@@ -1,0 +1,26 @@
+.container {
+    margin: 10px 150px;
+    padding: 40px 50px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.textDiv {
+    background-color: darkgray;
+    width: 750px;
+    margin: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px; 
+}
+
+.gallery {
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+}
+
+.gallery:hover {
+    border: 2px solid gray;
+}

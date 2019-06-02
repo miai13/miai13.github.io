@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Radionice za djecu</title>
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <body>
+        <img src="slike/naslovna_slika.jpg" >
+
+         <!-- Navigacijska traka -->
+         <ul id="navBar"> 
+            <a href="application.html"><li class="navBarPart">Prijavi se na radionicu</li></a>
+            <li class="navBarPart">Popis radionica
+                <ul class="dropdown">
+                    <a href="croatianWorkshopsList.html"><li>Hrvatski jezik</li></a>
+                    <a href="artWorkshopsList.html"><li>Likovna kultura</li></a>
+                </ul>
+            </li>
+            <a href="about.html"><li class="navBarPart" style="width: 100px">O nama</li></a>
+            <a href="contact.html"><li class="navBarPart" style="width: 100px">Kontakt</li></a>
+            <a href="home.html"><li class="navBarPart" style="width: 100px">Home</li></a>
+        </ul>
+
+        <!-- Radionice iz likovnog -->
+        <div id="likovni" class="outerDiv" style="padding: 20px;">
+            <h1>Likovna kultura</h1>
+            <a href="artWorkshop.html"><div class="picAndText"> <!-- Prva radionica -->
+                <div class="picDiv">
+                    <img src="https://www.maxpixel.net/static/photo/640/Brush-Watercolor-Colors-Painting-Water-Colorful-1067686.jpg" style="height: 220px">
+                </div>
+                <div class="textDiv">Uz zabavne motive i likovne tehnike Vaše dijete će naučiti kompleksne pojmove poput optičkog miješanja boja, nijansi i kompozicija boja, komplementarnog i kromatsko-akromatskog kontrasta.</div>
+            </div></a>
+            <a href="artWorkshop.html"><div class="picAndText"> <!-- Druga radionica -->
+                <div class="picDiv">
+                    <img src="https://media.defense.gov/2012/Jul/31/2000129264/780/780/0/120711-F-ZZ999-009.JPG" style="height: 220px">
+                </div>
+                <div class="textDiv">Osim što oblikovanjem gline, plastelina i žice dijete poboljšava svoju motoriku, ono će isto tako bolje upoznati pojmove kao što su prostor, volumen i masa, a ta znanja dobro dođu čak i u matematici i fizici.</div>
+            </div></a>
+            <a href="artWorkshop.html"><div class="picAndText"> <!-- Treća radionica -->  
+                <div class="picDiv">
+                    <img src="https://cdn.pixabay.com/photo/2018/12/12/22/13/kids-3871755_960_720.png" style="height: 220px; background-color: white">
+                </div>
+                <div class="textDiv">Točka i crta iako su naoko jednostavni elementi kriju mnoge zanimljive tajne. Koju crtu odabrati, kakve su crte po toku, kakve po karakteru, a kakve po značenju otkrit ćemo na ovoj radionici.</div>
+            </div></a>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <img id="instagram" class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Instagram_circle.svg/512px-Instagram_circle.svg.png">
+            <img id="facebook" class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Icon_Facebook.svg/512px-Icon_Facebook.svg.png">
+            <img id="twitter" class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Icon_Twitter.svg/512px-Icon_Twitter.svg.png">
+            <div id="newsletter">
+                <h1 style="font-size: 17px">Želite li primati naše obavijesti?</h1>
+                <p>Prijavite se na naš newsletter, prijavom dobivate kôd kojim ostvarujete pravo na 10% popusta na jednu radionicu.</p>
+                <form>
+                    Ime:<br>
+                    <input type="text" id="apply"><br>
+                    e-mail adresa:<br>
+                    <input type="text" id="e-mail"><br><br>
+                    <button id="news" style="border-radius: 0%" onclick="applyFunc()" type="button">Prijavi se!</button>
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript" src="home.js"></script>
+    </body>
+</html>

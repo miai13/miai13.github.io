@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Radionice za djecu</title>
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="application.css">
+    </head>
+    <body>
+        <img src="slike/naslovna_slika.jpg" >
+
+         <!-- Navigacijska traka -->
+         <ul id="navBar"> 
+            <a href="application.html"><li class="navBarPart">Prijavi se na radionicu</li></a>
+            <li class="navBarPart">Popis radionica
+                <ul class="dropdown">
+                    <a href="croatianWorkshopsList.html"><li>Hrvatski jezik</li></a>
+                    <a href="artWorkshopsList.html"><li>Likovna kultura</li></a>
+                </ul>
+            </li>
+            <a href="about.html"><li class="navBarPart" style="width: 100px">O nama</li></a>
+            <a href="contact.html"><li class="navBarPart" style="width: 100px">Kontakt</li></a>
+            <a href="home.html"><li class="navBarPart" style="width: 100px">Home</li></a>
+        </ul>
+        
+        <!-- Prijava -->
+        <div class="outerDiv" style="height: auto">
+            <h1>Prijavite svoje dijete na radionicu</h1>
+            <div class="outerPicAndText" >
+                <div class="picAndText" style="height: auto; padding: 20px; line-height: 200%">  
+                    <form>
+                        Ime:<br>
+                        <input type="text" id="name"><br>
+                        Prezime:<br>
+                        <input type="text" id="surname"><br>
+                        Ime djeteta:<br>
+                        <input type="text" id="nameCh"><br>
+                        Prezime djeteta:<br>
+                        <input type="text" id="surnameCh"><br>
+                        Dob:<br>
+                        <select id="age" onselect="ageSelect()" onchange="ageSelect()">
+                            <option value=" "> </option>
+                            <option value="jaslice">Jaslice</option>
+                            <option value="vrtić">Vrtić</option>
+                            <option value="1sk">Prvi razred</option>
+                            <option value="2sk">Drugi razred</option>
+                            <option value="3sk">Treći razred</option>
+                            <option value="4sk">Četvrti razred</option>
+                            <option value="5sk">Peti razred</option>
+                            <option value="6sk">Šesti razred</option>
+                            <option value="7sk">Sedmi razred</option>
+                            <option value="8sk">Osmi razred</option>
+                        </select><br>
+                        Vaša e-mail adresa:<br>
+                        <input type="text" id="e-mailApply"><br>
+                    </form>
+
+                    <p>Odaberite radionicu:</p>
+                    <select id="workshop" onchange="workshopSelect()">
+                            <option value=" "> </option>
+                        <optgroup label="Hrvatski jezik">
+                            <option value="gluma">Radionica glume</option>
+                            <option value="čitanje">Radionica izražajnog čitanja</option>
+                            <option value="pisanje">Radionica kreativnog pisanja</option>
+                        </optgroup>
+                        <optgroup label="Likovna kultura">
+                            <option>Radionica crtanja</option>
+                            <option>Radionica slikanja</option>
+                            <option>Radionica modeliranja</option>
+                        </optgroup>
+                    </select><br><br>
+                    <button type="button" id="applyBtn" onclick="applyClick()" style="border-radius: 0%" >Prijava</button>
+                </div>
+                <div>
+                    <img src="https://s3.amazonaws.com/ellevate-app-uploads-production/blog_posts/7705/featured_image/large/healthy-kids.jpg?1475413810" style="align-self: center">
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <img id="instagram" class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Instagram_circle.svg/512px-Instagram_circle.svg.png">
+            <img id="facebook" class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Icon_Facebook.svg/512px-Icon_Facebook.svg.png">
+            <img id="twitter" class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Icon_Twitter.svg/512px-Icon_Twitter.svg.png">
+            <div id="newsletter">
+                <h1 style="font-size: 17px">Želite li primati naše obavijesti?</h1>
+                <p>Prijavite se na naš newsletter, prijavom dobivate kôd kojim ostvarujete pravo na 10% popusta na jednu radionicu.</p>
+                <form>
+                    Ime:<br>
+                    <input type="text" id="apply"><br>
+                    e-mail adresa:<br>
+                    <input type="text" id="e-mail"><br><br>
+                    <button id="news" style="border-radius: 0%" onclick="applyFunc()" type="button">Prijavi se!</button>
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript" src="home.js"></script>
+        <script type="text/javascript" src="application.js"></script>
+    </body>
+</html>

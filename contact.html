@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Radionice za djecu</title>
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="about.css">
+    </head>
+    <body>
+        <img src="slike/naslovna_slika.jpg" >
+
+        <!-- Navigacijska traka -->
+        <ul id="navBar" style="z-index: 1"> 
+            <a href="application.html"><li class="navBarPart">Prijavi se na radionicu</li></a>
+            <li class="navBarPart">Popis radionica
+                <ul class="dropdown">
+                    <a href="croatianWorkshopsList.html"><li>Hrvatski jezik</li></a>
+                    <a href="artWorkshopsList.html"><li>Likovna kultura</li></a>
+                </ul>
+            </li>
+            <a href="about.html"><li class="navBarPart" style="width: 100px">O nama</li></a>
+            <a href="contact.html"><li class="navBarPart" style="width: 100px">Kontakt</li></a>
+            <a href="home.html"><li class="navBarPart" style="width: 100px">Home</li></a>
+        </ul>
+
+        <!-- Sadržaj na stranici --> 
+        <div class="container">
+            <h1>Obratite nam se</h1>
+            <div class="textDiv">
+                <p>Telefon: 021/000 - 000</p><br>
+                <p>Mobitel: 090/000 - 000</p><br>
+                <p>Adresa: Nigdjezemska ulica 58, 00 000 Villekulla</p><br>
+            </div>
+            <div class="textDiv" style="display: flex">
+                    <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=split&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no"></iframe><a href="https://www.pureblack.de"></a></div><style>.mapouter{height:500px;width:600px; z-index: 0;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;z-index: 1;}</style></div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <img id="instagram" class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Instagram_circle.svg/512px-Instagram_circle.svg.png">
+            <img id="facebook" class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Icon_Facebook.svg/512px-Icon_Facebook.svg.png">
+            <img id="twitter" class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Icon_Twitter.svg/512px-Icon_Twitter.svg.png">
+            <div id="newsletter">
+                <h1 style="font-size: 17px">Želite li primati naše obavijesti?</h1>
+                <p>Prijavite se na naš newsletter, prijavom dobivate kôd kojim ostvarujete pravo na 10% popusta na jednu radionicu.</p>
+                <form>
+                    Ime:<br>
+                    <input type="text" id="apply"><br>
+                    e-mail adresa:<br>
+                    <input type="text" id="e-mail"><br><br>
+                    <button id="news" style="border-radius: 0%" onclick="applyFunc()" type="button">Prijavi se!</button>
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript" src="home.js"></script>
+    </body>
+</html>
+
